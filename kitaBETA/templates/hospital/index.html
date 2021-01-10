@@ -1,0 +1,48 @@
+
+{% load static %}
+{% block content %}
+
+
+<head>
+    <title>KITA</title>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h5,
+    h3 {
+      text-align: center;
+    }
+
+    body {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+        position: relative;
+        top: -250px;
+
+      background-image: url('https://i.ibb.co/qBsmb8C/barak.png');}
+
+
+
+  </style>
+</head>
+{% include "hospital/navbar.html" %}
+<br>
+<br>
+<div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px; background:none;">
+  <br>
+  <br><br><br><br><br>
+  <p class="lead">
+    <center><a class="btn btn-lg" style="margin-top: 600px; background: #649eeb; color:white; border-color: #649eeb" href="/patientclick" role="button">Take Appointment</a></center>
+
+
+  </p>
+  <br><br>
+<br><br><br><br>
+<br><br><br>
+
+
+{% endblock content %}

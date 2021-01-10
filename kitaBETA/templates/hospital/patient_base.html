@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    .body2 {
+
+      padding-left:1px;
+        background: #649eeb;
+
+    }
+    main {
+      position: relative;
+      height: 100vh;
+    }
+
+
+
+/*
+    .profilepic {
+
+     background-image:url(/static/images/kaanBG.png/);
+        background-size: cover;
+
+  height: 150px;
+  width: 40px;
+        position: relative;
+
+
+}*/
+
+
+  </style>
+</head>
+
+<body class="body2">
+
+
+
+  <main>
+  <!--
+  <center>
+   <div class="profilepic" > </div>
+</center>  -->
+
+    <div class="bs-example">
+      <nav class="navbar navbar-expand-md  navbar-dark fixed-top" style="background:white;">
+
+
+
+
+
+        <a href="/patient-appointment" class="navbar-brand"style=" color:#649eeb; font-size: 21px;">KITA</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+          <div class="navbar-nav" style=";">
+            <a href="/patient-dashboard" class="nav-item nav-link" style=" color:#649eeb; font-size: 16px;">Dashboard</a>
+          </div>
+            -->
+
+          <div class="navbar-nav" style=";">
+            <a href="/patient-appointment" class="nav-item nav-link" style=" color:#649eeb; font-size: 16px;">Appointments</a>
+          </div>
+          <div class="navbar-nav" style=";">
+            <a href="/patient-discharged" class="nav-item nav-link" style=" color:#649eeb; font-size: 16px;">Invoice</a>
+          </div>
+          <div class="navbar-nav" style=";">
+            <a href="/logout" class="nav-item nav-link" style=" color:#649eeb; font-size: 16px;">Logout</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <br><br>
+
+    {% block content %}
+
+    {% endblock content %}
+
+
+  </main>
+
+
+</body>
+
+</html>

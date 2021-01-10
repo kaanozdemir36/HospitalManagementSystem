@@ -1,0 +1,130 @@
+{% extends 'hospital/patient_base.html' %}
+{% load static %}
+{% block content %}
+<br><br>
+
+<head>
+
+      <title>Appointment</title>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Appointment</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js%22%3E</script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js%22%3E</script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+
+  <style type="text/css">
+
+    a:link {
+      text-decoration: none;
+    }
+    h6 {
+      color: white;
+    }
+
+    .order-card {
+      color: #fff;
+    }
+
+    .bg-c-blue {
+      background: linear-gradient(45deg, #4099ff, #73b4ff);
+    }
+
+    .bg-c-green {
+      background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+    }
+
+    .card {
+      border-radius: 5px;
+      -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+      box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+      border: none;
+      margin-bottom: 30px;
+    background: white;
+    }
+
+    .card .card-block {
+      padding: 25px;
+    }
+
+    .order-card i {
+      font-size: 26px;
+    }
+
+  </style>
+</head>
+<center>
+
+
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+  <div class="container">
+    <div class="row">
+
+            <div class="col-md-4 col-xl-6">
+        <div class="card bg-c-green order-card">
+          <div class="card-block">
+              <br>
+            <a href="/patient-book-appointment">
+              <h6 class="m-b-20" style="color:#649eeb; ">Book Appointment</h6>
+            </a>
+            <br>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-xl-6">
+        <div class="card bg-c-blue order-card">
+          <div class="card-block">
+            <a href="/patient-view-appointment">
+                <br>
+              <h6 class="m-b-20" style="color:#649eeb; ">View Your Appointment</h6>
+            </a>
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+              <div class="col-md-4 col-xl-6" >
+        <div class="card bg-c-blue order-card" style=" position:relative; left: 280px;">
+
+          <div class="card-block">
+              <center>
+            <a href="/deleteappointment">
+                <br>
+              <h6 class="m-b-20" style="color:#649eeb; ">Delete Your Appointment</h6>
+            </a>
+              </center>
+            <br>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+</center>
+<br><br><br><br><br><br><br>
+{% endblock content %}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    .bs-example {
+      margin: 0px;
+
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      font-family: sans-serif;
+
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background:white;">
+      <a href="/" class="navbar-brand" style=" color:#649eeb; font-size: 21px;">KITA</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+
+          <center>
+        <div class="navbar-nav">
+
+         <!--
+         ADMİN GİRİŞİ İÇİN GEREKLİ ULAN UZANTI
+
+         <a href="/adminclick" class="nav-item nav-link">Admin</a>
+          -->
+
+            <a href="/patientclick" class="nav-item nav-link" style=" color:#649eeb; font-size: 16px;">Patient</a>
+            <a href="/doctorclick" class="nav-item nav-link " style=" color:#649eeb; font-size: 16px;">Doctor</a>
+
+
+        </div>
+              </center>
+
+
+          <div class="navbar-nav">
+          <a href="/aboutus" class="nav-item nav-link" style=" color:#649eeb; font-size: 16px;">About Us</a>
+         <!-- <a href="/contactus" class="nav-item nav-link" style=" color:#649eeb; font-size: 16px;">Contact Us</a>-->
+        </div>
+
+
+      </div>
+    </nav>
+  </div>
+
+
+
+</body>
+
+</html>

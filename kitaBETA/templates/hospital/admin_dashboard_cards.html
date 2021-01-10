@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+         <title>Dashboar</title>
+
+  <meta charset="utf-8">
+  <title></title>
+
+  <style media="screen">
+    .market-update-block {
+      padding: 1em 1em;
+      background: #999;
+    }
+
+    .market-update-block h3 {
+      color: #649eeb;
+      font-size: 2.5em;
+    }
+
+    .market-update-block h4 {
+      font-size: 1.2em;
+      color: #649eeb;
+    }
+
+    .market-update-block p {
+      color: #649eeb;
+      font-size: 1em;
+      line-height: 0.5em;
+    }
+
+    .market-update-block.clr-block-1 {
+      background: white;
+
+        border-color: #649eeb;
+      margin-right: 10em;
+        position:relative;
+        left: 400px;
+
+
+    }
+    .market-update-block.clr-block-2 {
+      background: white;
+        border-color: #649eeb;
+      margin-right: 10em;
+        position:relative;
+        left: 300px;
+
+    }
+    .market-update-block.clr-block-3 {
+      background: white;
+        border-color: #649eeb;
+      margin-right: 10em;
+        position:relative;
+        left: 200px;
+
+
+    }
+
+
+    .market-update-left {
+      padding: 0px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body>
+
+
+
+
+  <div class="market-updates">
+
+
+    <div class="col-md-3 market-update-gd">
+      <div class="market-update-block clr-block-1">
+        <div class="col-md-12 market-update-left">
+            <center>
+          <h3>{{doctorcount}}</h3>
+          <h4>Total Doctor</h4>
+          <p>Approval Required : {{pendingdoctorcount}}</p>
+
+</center>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-3 market-update-gd">
+
+
+      <div class="market-update-block clr-block-2">
+          </center>
+        <div class="col-md-12 market-update-left">
+            <center>
+          <h3>{{patientcount}}</h3>
+          <h4>Total Patient</h4>
+          <p>Wants to Admit : {{pendingpatientcount}}</p>
+
+</center>
+        </div>
+
+        <div class="clearfix"> </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="col-md-3 market-update-gd">
+      <div class="market-update-block clr-block-3">
+        <div class="col-md-13 market-update-left">
+                      <center>
+          <h3>{{appointmentcount}}</h3>
+          <h4>Total Appointment</h4>
+          <p>Approve Appointments :{{pendingappointmentcount}} </p>
+        </div>
+</center>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <div class="clearfix"> </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>

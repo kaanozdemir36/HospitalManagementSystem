@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Doctor Approval</title>
+
+
+  <style media="screen">
+
+
+    .body3{
+     background: #649eeb;
+
+
+    }
+
+
+
+      .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+
+    }
+
+  </style>
+</head>
+
+
+<body class="body3">
+  {% include "hospital/navbar.html" %}
+  <br>
+  <br>
+
+  <div class="jumbotron" style="margin-top: 0px;
+    margin-bottom: 0px;">
+      <center
+    <h1 class="display-4" style="color: #649eeb">Hello, {{request.user.first_name}}</h1>
+
+      <p class="lead"  style="color: #649eeb">   <br>Thanks for approval!<br>We will back to you soon.</p>
+      </center>
+<center>
+
+
+    <br><br>
+    <p class="lead">
+      <a class="btn btn-lg" style="background:#649eeb; border-color:#649eeb; color: white;"  href="/logout" role="button">HOMEPAGE</a>
+    </p>
+    </center>
+  </div>
+
+
+</body>
+
+
+</html>
